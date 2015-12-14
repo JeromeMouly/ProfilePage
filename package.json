@@ -1,0 +1,22 @@
+{
+  "name": "testzepto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeromeMouly/ProfilePage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeromeMouly/ProfilePage/issues"
+  },
+  "homepage": "https://github.com/JeromeMouly/ProfilePage#readme",
+  "dependencies": {
+    "zepto": "0.0.4"
+  }
+}

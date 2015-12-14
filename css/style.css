@@ -1,0 +1,62 @@
+body {
+	background-color: #bdbdbd;
+	width: 100%;
+	font-family: 'Lobster';
+}
+
+img {
+	border-radius: 1000px;
+	margin: 0 auto;
+}
+
+.photo {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+}
+
+h1 {
+	color: #606060;
+	font-family: 'Lobster';
+	font-size: 50px;
+	text-align: center;
+}
+
+h2 {
+	color: #606060;
+	font-family: 'Open sans';
+	font-size: 50px;
+	text-align: center;
+}
+
+section {
+	width: 100%;
+	background: #fff;
+}
+
+#main {
+	width: 940px;
+	vertical-align: middle;
+	margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+}
+
+p {
+	width: 50%;
+	text-align: justify;
+}
+
+.menu {
+	float:right;
+}
+
+section .menu {
+	width: 20%;
+	margin-top: -265px;
+}
+
+button {
+	background-color: #707070;
+}

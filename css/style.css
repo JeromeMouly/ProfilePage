@@ -28,15 +28,20 @@ h1.gauche {
 	vertical-align: top;
 	float: left;
 	text-align: center;
-	margin: -125px 0px -100px 500px;
+	margin: -125px 0px 0px 500px;
 	font-size: 75px;
+	text-transform: lowercase;
 }
 
 h1.droit {
 	vertical-align: top;
 	float: right;
-	margin: -125px 500px -100px;
+	margin: -125px 525px -100px;
 	font-size: 75px;
+}
+
+h1.gauche:first-letter {
+	text-transform: uppercase;
 }
 
 h2 {
@@ -94,7 +99,7 @@ nav.navbar {
 ul {
 	width: 185px;
 	height: 400px;
-	margin-top: 16px;
+	margin-top: 45px;
 	padding-left: 75px;
 	vertical-align: middle;
 }
@@ -134,45 +139,19 @@ p.endpage {
 	font-family: 'Quicksand';
 	text-align: center;
 	width: 100%;
-	margin: 0 auto;
+	margin-top: 20px;
 	vertical-align: middle;
 	/*background: #9E9E9E;*/
 }
 
-p.texte {
+/*p.texte {
+	display: none;
+}*/
+
+div.texte {
 	display: none;
 }
 
-/*
-li.bouton {
-	width: 200px;
-	height: 25px;
-	background-color: #6eaed4;
-	text-decoration: none;
-	list-style: none;
+#contact {
+//	display: block;
 }
-
-li a {
-	width: 200px;
-	height: 45px;
-	background-color: #6eaed4;
-	padding: 0;
-	margin: 10px 0;
-	border: 0;
-	width: 200px;
-	height: 45px;
-	font-family: 'Quicksand';
-	font-size: 18px;
-	text-decoration: none;
-	color: #cececce;
-	box-shadow: 5px 5px 1px 0px #656565;
-}
-
-ul {
-	margin: 0;
-	width: 20px;
-	height: 45px;
-	padding: 0;
-	width: 100%;
-	color: #cececce;
-}*/

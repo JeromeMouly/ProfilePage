@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/JeromeMouly/ProfilePage#readme",
   "dependencies": {
+    "mustache": "^2.2.1",
     "zepto": "0.0.4"
   }
 }

@@ -6,24 +6,25 @@ $(document).ready(function() {
 		var id = $(this).attr('href');
 		$(id).show();
 	};
-	$('a').on('click', montrer);
+	$('body').on('click', 'a', montrer);
 
-	$.getJSON("user-17.json", function(data) {
-		var t = $('[elt]');
-		for (var i = 0; i<t.length; i++) {
-			var attribut = $(t[i]).attr("elt");
-			var valeur = data[attribut];
-			$(t[i]).html(valeur);
-		};
+	var theTemplate = function(themustache, cible, json) {
+		var template = themustache;
+		var info = Mustache.to_html(template, json);
+		$(cible).html(info);
+	}
+
+	var id = 17;
+	var queryString = window.location.search.substring(1);
+	if (queryString) {
+		queryString = querystring.split("=");
+		id = querystring(1);
+	}
+
+	$.getJSON("http://vps227573.ovh.net/u-17.json", function(json) {
+		var template = $('#template').html();
+		var rendered = Mustache.render(template, json);
+		$('body').html(rendered);
 	});
 
 });
-
-/*$.getJSON('user-17.json', function(data) {
-		$('#contact').html(data.id.
-			data.first_name
-			data.last_name,
-			data.occupation,
-			data.badges,
-			data.contact(data.email,data.website));
-	});*/

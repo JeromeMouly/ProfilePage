@@ -21,7 +21,7 @@ $(document).ready(function() {
 		id = querystring(1);
 	}
 
-	$.getJSON("http://vps227573.ovh.net/u-17.json", function(json) {
+	$.getJSON("https://s.idsympa.com/u-17.json", function(json) {
 		var template = $('#template').html();
 		var rendered = Mustache.render(template, json);
 		$('body').html(rendered);

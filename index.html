@@ -20,6 +20,23 @@
 
 	<script id="template" type="x-tmpl-mustache">
 
+
+		<div id="openModal">
+
+			<div  class="modalbox">
+
+				<a href="#close" title="close" class="close">X</a>
+
+				<!-- <h2 class="modalbox">Contact</h2> -->
+				<h2>{{first_name}} {{last_name}}</h2>
+
+				<p>Mail : <span class="mail">{{contact.email}}</span></p>
+				<p>Website : <span class="web">{{contact.website}}</span></p>
+
+			</div>
+
+		</div>
+
 		<header class="image">
 
 			<img class="photo" src="http://jeromemouly.com/wp-content/uploads/2015/12/Mouly-Jérôme.jpg" alt="Photo Jérôme Mouly" />
@@ -49,15 +66,24 @@
 
 			</div>
 
+			<p class="accueil">
+					Quisque nec placerat ligula, vulputate accumsan velit. Sed enim purus, elementum non congue ac, pulvinar eu orci. Morbi vitae eleifend ligula. Integer sit amet leo ut nisl lobortis laoreet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam ante nisl, suscipit ut vehicula sit amet, laoreet a mi. Nunc tincidunt scelerisque sapien. In hac habitasse platea dictumst. Aenean quam lacus, vulputate sit amet pretium sed, blandit ut ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras porttitor sapien in sem maximus euismod. Nunc ut sem et lectus faucibus euismod quis vitae mi. Morbi sit amet consequat felis. Ut ut rutrum purus. Proin vestibulum quam vel lectus posuere, ac sagittis ligula vulputate.
+				</p>
+
 			<div id="projets" class="texte">
 
-				<p>
+
+				<p class="masque">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur imperdiet justo rutrum dictum. Morbi congue congue massa non ornare. Nunc in tincidunt augue. Nunc id mauris ac magna rutrum pharetra eget ut erat. Aenean velit sem, tincidunt sit amet finibus et, pulvinar et ante. Maecenas ac lectus dignissim, venenatis nibh at, semper augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam sed commodo odio. Donec sed libero vel risus mollis eleifend. Pellentesque molestie convallis lobortis. Pellentesque suscipit tempus vulputate. Etiam vulputate luctus erat vel malesuada. Etiam a elementum quam. Quisque nulla massa, suscipit convallis nulla at, venenatis semper dolor. Donec ultrices magna imperdiet, dictum mi id, condimentum turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-				</p></div>
-				<div  id="badges" class="texte"><p>
+				</p>
+			</div>
+
+			<div  id="badges" class="texte">
+				<p class="masque">
 					Maecenas maximus, justo non malesuada congue, quam nulla tempor libero, ac sagittis libero libero in mi. Morbi vel quam faucibus, cursus sapien in, suscipit justo. Pellentesque in pretium quam. Sed accumsan, nibh a accumsan congue, mi augue malesuada est, a vulputate ipsum lorem ac quam. Aliquam id lacinia ligula. Sed interdum nisl vitae ipsum sagittis ornare. Pellentesque auctor, felis id dignissim sollicitudin, est risus egestas ligula, sed accumsan turpis ligula blandit massa.
 				</p>
 			</div>
+
 			<div  id="contact" class="texte">
 				<p class="mail"><span elt="email">{{contact.email}}</span></p>
 				<p class="web"><span elt="website">{{contact.website}}</span></p>

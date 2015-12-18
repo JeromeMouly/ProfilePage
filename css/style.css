@@ -144,14 +144,75 @@ p.endpage {
 	/*background: #9E9E9E;*/
 }
 
-/*p.texte {
-	display: none;
-}*/
-
 div.texte {
+	display: none;
+}
+
+/*.masque {
 	display: none;
 }
 
 #contact {
 //	display: block;
+}*/
+
+h2.modalbox {
+	font-family: 'Lobster';
+	font-size: 25px;
+}
+
+#openModal {
+	position: fixed;
+	font-family: 'Quicksand';
+	color: #BDBDBD;
+	top: 0;
+	right:0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.8);
+	display: none;
+}
+
+.modalbox:target {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.modalbox {
+	width: 500px;
+	height: 300px;	
+	background-color: #212121;
+	border: 2px solid #BDBDBD;
+	border-radius: 5px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+}
+
+
+.close {
+	background: #BDBDBD;
+	color: #212121;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	position: absolute;
+	right: -12px;
+	top: -37px;
+	width: 25px;
+	border-radius: 12px;
+	box-shadow: 1px 1px 3px #000;
+
+}
+
+.close:hover {
+	background-color: #6eaed4; 
+}
+
+.mail {
+	color: #BDBDBD;
+}
+
+.web {
+	color: #BDBDBD;
 }

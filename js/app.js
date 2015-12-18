@@ -1,11 +1,21 @@
 $(document).ready(function() {
 	
 	var montrer = function(event) {
-		event.preventDefault();
-		$('.texte').hide();
+		$('.accueil').hide();
 		var id = $(this).attr('href');
-		$(id).show();
+		event.preventDefault();
+		if (id == "#contact"){
+			$('#openModal').show();	
+		} else {
+			$('.texte').hide();
+			$(id).show();
+		}
 	};
+
+	$('body').on('click', '.close', function(){
+		$('#openModal').hide();
+	});
+
 	$('body').on('click', 'a', montrer);
 
 	var theTemplate = function(themustache, cible, json) {
